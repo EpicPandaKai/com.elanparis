@@ -1,0 +1,47 @@
+<div class="container-fluid">
+	<div class="panel-body">
+		<div class="panel panel-default">
+			<div class="page-header">
+		  		<h1>コンタクト <small>Contact</small></h1>
+		  	</div>
+		</div>
+	</div>
+	<h3>アクセス</h3>
+	<p>M9 Rue de la Pompe</p>
+	<div id="map">
+	<!-- TODO: Use Google Maps JavaScript API rather than an <iframe> -->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.815201312113!2d2.2758574159060627!3d48.861734208424906!2m3!1f0!2f0!f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fff5b0b0e29%3A0x32791a21dc136867!2s79+Rue+de+la+Tour%2C+75116+Paris!5e0!3m2!1sfr!2sfr!4v1495395972322" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+			    <h2>お問い合わせ <small>Contact us</small></h2>
+			    <hr/>
+	            <form action="" method="post" role="form" class="contactForm">
+	                <div class="form-group">
+	                    <input type="text" name="name" class="form-control" id="name" placeholder="お名前" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required="true"/>
+	                    <div class="validation"></div>
+	                </div>
+	                <div class="form-group">
+	                    <input type="email" class="form-control" name="email" id="email" placeholder="メ－ルアドレス" data-rule="email" data-msg="Please enter a valid email" required="true" />
+	                    <div class="validation"></div>
+	                </div>
+	                <div class="form-group">
+	                    <input type="text" class="form-control" name="subject" id="subject" placeholder="タイトル" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"/>
+	                    <div class="validation"></div>
+	                </div>
+	                <div class="form-group">
+	                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="本文" required="true"></textarea>
+	                    <div class="validation"></div>
+	                </div>
+	                <div class="text-center"><button type="submit" class="btn btn-elan btn-block">送信</button></div>
+	                <div id="sentmessage" class="hidden">お問い合わせを受付ました。 この度はお問い合わせ頂き誠にありがとうございます。 お問い合わせ内容を確認させていただき、後ほど担当者よりご回答をさせていただきます。恐れ入りますが今しばらくお待ちいただけますよう、よろしくお願い申し上げます。</div>
+	                <div id="errormessage" class="hidden" >Error :-(</div>
+	            </form>
+			</div>
+		</div>
+	</div>
+</div>
